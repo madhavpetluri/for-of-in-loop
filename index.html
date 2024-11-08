@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- reverse a string input: hello output : olleh -->
+    <script>
+   
+        let str="hello";
+        let reversedStr="";
+     
+            for(i=str.length-1;i>=0;i--){
+              reversedStr+=str[i];
+              
+            }
+            console.log(reversedStr);
+         </script>
+         <!-- find a even numbers sum and odd numbers sum in an array - [23,54,67,64,46,95,98] -->
+          <script>
+           let arr=[23,54,67,64.46,95,98];
+     let esum=0;
+     let osum=0;
+     for(i=0;i<arr.length;i++){
+         if(arr[i]%2==0){
+             esum+=arr[i];
+         }
+         else{
+             osum+=arr[i];
+         }
+     }
+     console.log("even sum is",esum);
+     console.log("odd sum is",osum);
+     
+          </script>
+          <!-- iterate an object values and keys using for of loop -->
+           <script>
+             let obj={
+         name:"madhav",
+         age:23,
+         branch:"CSE"
+     };
+     for(var i in obj){
+        console.log(i)
+         console.log(obj[i]);
+     }
+           </script>
+</body>
+</html>
